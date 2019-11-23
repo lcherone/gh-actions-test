@@ -17,4 +17,3 @@ jobs:
 
       - name: Get the output
         run: echo "${{ steps.test.outputs.stdout }}"
-#
