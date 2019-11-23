@@ -13,7 +13,7 @@ jobs:
         id: test
         uses: lcherone/gh-actions/curl@master
         with:
-          args: -H "Content-Type:application/json" https://endpmgg3zieqg.x.pipedream.net
+          args: -d '{"token":"12345","action":"ci"}' -H "Content-Type:application/json" https://endpmgg3zieqg.x.pipedream.net
 
       - name: Get the output
         run: echo "${{ steps.test.outputs.stdout }}"
