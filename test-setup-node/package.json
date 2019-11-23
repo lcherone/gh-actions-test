@@ -1,0 +1,22 @@
+{
+    "name": "example-app",
+    "version": "0.0.1",
+    "private": true,
+    "main": "./index.js",
+    "scripts": {
+        "lint": "standard --fix && standard",
+        "test": "cd tests && ../node_modules/mocha/bin/mocha --exit --check-leaks --slow 500ms"
+    },
+    "standard": {
+        "env": [
+            "mocha"
+        ]
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "debug": "^3.1.0",
+        "mocha": "^5.1.1",
+        "should": "^13.2.3",
+        "standard": "^11.0.1"
+    }
+}
