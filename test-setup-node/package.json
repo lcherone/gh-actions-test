@@ -4,8 +4,8 @@
     "private": true,
     "main": "./index.js",
     "scripts": {
-        "lint": "standard --fix && standard",
-        "test": "cd tests && ../node_modules/mocha/bin/mocha --exit --check-leaks --slow 500ms"
+        "lint": "standard",
+        "test": "cd test && ../node_modules/mocha/bin/mocha --exit --check-leaks --slow 500ms"
     },
     "standard": {
         "env": [
